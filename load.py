@@ -34,4 +34,4 @@ if __name__ == "__main__" :
     for row in rows :
         cursor.execute("""INSERT INTO Series("series_reference", "period", "data_value", "status", "units") values(%s, %s, %s, %s, %s)""",(row[1], row[2], row[3], row[5], row[6])) 
       
-    connection.commit()  
+    connection.commit()
